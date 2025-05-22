@@ -94,10 +94,10 @@ INSERT INTO sampah (
 );
 
 ALTER TABLE barang_tukar
-ADD COLUMN barang_image VARCHAR(255);
+ADD barang_image VARCHAR(255);
 
 ALTER TABLE transaksi_tukar_point
-ADD COLUMN alasan VARCHAR(255) DEFAULT '-';
+ADD alasan VARCHAR(255) DEFAULT '-';
 
 UPDATE barang_tukar SET barang_name = 'Beras 1 Kg' WHERE barang_id = 3;
 
